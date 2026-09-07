@@ -1,0 +1,28 @@
+id,lead_id,text,created_on
+1,1,Ana wants a quote for the new bakery counter software. Says the old system crashes every Saturday.,2026-06-03
+2,1,"Called back, she was busy with the morning rush. Try after 11h.",2026-06-10
+3,2,"Rui runs two gyms, wants member management for both. Big potential if the first one goes well.",2026-06-05
+4,2,"Sent the proposal, 4800 for the first gym. He asked about a discount for the second.",2026-07-14
+5,3,"Met Sofia at the Braga trade fair. Family wine estate, wants a simple system for tastings and bookings.",2026-06-09
+6,4,Miguel signed! Pharmacy goes live next month. Remember to send the welcome kit.,2026-07-15
+7,5,"Beatriz came through Rui's recommendation. Consulting firm, 12 people, needs lead tracking (ironic, I know).",2026-06-16
+8,5,"Second call went well, she is comparing us with two other tools. Follow up early September.",2026-08-20
+9,8,"Pedro's garage is chaos, paper everywhere. Proposal covers bookings and invoices.",2026-06-30
+10,8,He said yes in principle but the accountant needs to look at it first.,2026-07-21
+11,9,"Clinic with 3 therapists. Carla is the decision maker, very organised, wants a demo for the team.",2026-06-26
+12,11,"Surf school signed for the summer season. Mariana is happy, might refer other schools on the coast.",2026-07-20
+13,12,"Boutique hotel, 18 rooms. André wants something for the front desk but also for the restaurant. Complex.",2026-07-03
+14,12,Demo done. He liked it. Next step is a proposal with two options (desk only vs desk + restaurant).,2026-08-11
+15,14,"Nuno has 6 trucks and manages everything by phone. Lots of pain, not much patience for software.",2026-07-09
+16,15,"Restaurant signed. Helena wants the reservation module first, menu module later.",2026-08-01
+17,16,"Francisco exports wine to Brazil, wants order tracking. Proposal sent, waiting for the harvest to finish.",2026-07-30
+18,19,"Jewellery shop in Chiado. Marta is careful, asked a lot of questions about backups.",2026-07-16
+19,21,"Dental clinic, two chairs. Diana asked for a proposal with the reminders feature.",2026-08-02
+20,22,"Gonçalo signed the small plan. Butcher shop, mostly wants stock alerts.",2026-08-10
+21,23,"Yoga studio, 40 regular students. Raquel wants class bookings. Small deal but easy.",2026-07-23
+22,26,"Hugo's workshop, mainly cars from the taxi companies. Proposal sent for the fleet plan.",2026-08-05
+23,26,Left a voicemail. He is on holiday until the end of August.,2026-08-19
+24,28,"Real estate agency, 8 agents. Eduardo came from Miguel's referral. Biggest deal in the pipeline right now.",2026-08-04
+25,28,Long call. Wants a demo for the whole team on the 10th of September.,2026-08-25
+26,7,Bookshop went with a cheaper tool. Inês said maybe next year.,2026-07-02
+27,24,Bruno decided to keep his spreadsheets. Fair enough.,2026-08-03
