@@ -2,7 +2,7 @@
 
 Group: ____________   Members: ____________________________
 
-Answer in this file, inside your repo. Use the AI as much as you like — then verify every answer in the code or by clicking. Write *where* you verified (file + line, or what you clicked).
+Answer in this file, inside your project folder. Use the AI as much as you like — then verify every answer in the code or by clicking. Write *where* you verified (file + line, or what you clicked).
 
 ## Ask the code
 
@@ -17,10 +17,10 @@ Answer in this file, inside your repo. Use the AI as much as you like — then v
 
 7. Ask the AI: *"What happens to a lead's notes when the lead is deleted?"* Then do it. Was the AI right? Paste its answer and what actually happened.
 8. Ask the AI to explain `overdue_followups`. Find one thing it glossed over or got wrong.
-9. **Bug #1** — `issues/001.md`: *"Searching for 'acme' finds nothing, but 'Acme' works."* Reproduce it. Name the line. Fix it. Commit with a message that says what you fixed. Push.
+9. **Bug #1** — `issues/001.md`: *"Searching for 'acme' finds nothing, but 'Acme' works."* Reproduce it. Name the line. Fix it. Save the file and check the app shows the right result now.
 10. Three questions you'd ask the developer who left.
 
 ## Done when
 - [ ] All laptops run the app
-- [ ] This file is answered and committed
-- [ ] Bug #1 fixed, pushed, shown to the TA (before / after)
+- [ ] This file is answered (it lives in your folder — keep the folder, next week it becomes a repo)
+- [ ] Bug #1 fixed and shown to the TA (before / after)

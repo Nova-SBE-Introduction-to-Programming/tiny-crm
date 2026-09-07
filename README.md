@@ -4,9 +4,9 @@ Tiny CRM is a minimal sales pipeline for a small company: leads move through the
 
 ## Run it
 
+Unzip the project, open the folder in your editor, open a terminal inside it, then:
+
 ```
-git clone <this repo>
-cd tiny-crm
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
