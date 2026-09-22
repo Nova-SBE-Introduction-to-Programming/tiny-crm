@@ -1,4 +1,4 @@
-"""Reset the live database: python seed.py copies seed/*.csv over data/*.csv."""
+"""Reset the live database: uv run python seed.py copies seed/*.csv over data/*.csv."""
 import os
 import shutil
 
@@ -18,6 +18,6 @@ def reset(data_dir=DATA_DIR):
     print("Done. The data is back to its original state.")
 
 
-# This block only runs when you type `python seed.py`, not when tests import the file.
+# This block only runs when you type `uv run python seed.py`, not when tests import the file.
 if __name__ == "__main__":
     reset()

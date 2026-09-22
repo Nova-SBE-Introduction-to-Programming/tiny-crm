@@ -4,27 +4,26 @@ Tiny CRM is a minimal sales pipeline for a small company: leads move through the
 
 ## Run it
 
-Unzip the project, open the folder in your editor, open a terminal inside it, then:
+Unzip the project, open the folder in Codex, open a terminal inside the folder, then:
 
 ```
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-streamlit run app.py
+uv run streamlit run app.py
 ```
+
+That one command installs Python and the libraries the first time (a minute), then starts the app. No `uv`? Install it once — macOS: `curl -LsSf https://astral.sh/uv/install.sh | sh`, Windows: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"` — and open a new terminal. Or ask Codex to run the app; it knows how (see `AGENTS.md`).
 
 ## Reset the data
 
 The app writes to the CSV files in `data/`. When you want the original data back:
 
 ```
-python seed.py
+uv run python seed.py
 ```
 
 ## Run the tests
 
 ```
-pytest
+uv run pytest
 ```
 
 Some tests fail on purpose. They describe features not built yet and bugs not fixed yet. That's your job.
@@ -35,7 +34,7 @@ Some tests fail on purpose. They describe features not built yet and bugs not fi
 app.py               all the Streamlit screens (start here)
 db.py                reads and writes the CSV files: load_table, save_table, append_row, next_id
 logic.py             the business rules: stages, search, overdue follow-ups, home-page numbers
-seed.py              python seed.py -> resets data/ from seed/
+seed.py              uv run python seed.py -> resets data/ from seed/
 data/leads.csv       the live "database", one file per table
 data/notes.csv
 data/activities.csv
@@ -48,6 +47,7 @@ tests/test_feature_3.py  red until you build specs/feature-3-csv-import.md
 tests/conftest.py    shared test helpers (a throwaway copy of the data for each test)
 specs/               what to build, written by a product manager
 issues/              what is broken, written by a user
-ONBOARDING.md        the week-1 question sheet: answer it in this file
-requirements.txt     streamlit and pytest, pinned
+ONBOARDING.md        the onboarding question sheet: answer it in this file
+pyproject.toml       streamlit and pytest, pinned (uv reads this)
+AGENTS.md            notes for Codex: how to run things, how to help a beginner
 ```

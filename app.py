@@ -1,4 +1,4 @@
-"""Tiny CRM: every screen of the app lives here. Start it with `streamlit run app.py`."""
+"""Tiny CRM: every screen of the app lives here. Start it with `uv run streamlit run app.py`."""
 import streamlit as st
 
 import logic
@@ -166,7 +166,7 @@ def show_add_lead():
 st.set_page_config(page_title="Tiny CRM")
 st.sidebar.title("Tiny CRM")
 screen = st.sidebar.radio("Screen", SCREENS)
-st.sidebar.caption("The data lives in data/*.csv. Reset it with `python seed.py`.")
+st.sidebar.caption("The data lives in data/*.csv. Reset it with `uv run python seed.py`.")
 
 if screen == "Pipeline":
     show_pipeline()

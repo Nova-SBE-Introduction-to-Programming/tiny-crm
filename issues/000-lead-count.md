@@ -10,4 +10,4 @@ The number above each stage to be the number of leads listed under that stage. B
 
 **What actually happened**
 
-Every single number is one higher than what is listed. "new" says 9, I count 8. "lost" says 5, I count 4. Same for the others. I added a lead and the "new" number went from 9 to 10, so it does follow the data, it is just always one too many. I also reset the data with `python seed.py` and it is still off by one, so it is not something I broke.
+Every single number is one higher than what is listed. "new" says 9, I count 8. "lost" says 5, I count 4. Same for the others. I added a lead and the "new" number went from 9 to 10, so it does follow the data, it is just always one too many. I also reset the data with `uv run python seed.py` and it is still off by one, so it is not something I broke.
