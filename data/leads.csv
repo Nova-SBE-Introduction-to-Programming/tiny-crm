@@ -1,6 +1,6 @@
 id,name,company,source,stage,value,followup_on,created_on,closed_on
-1,Ana Ferreira,Padaria Central,referral,won,1200,2026-8-5,2026-06-02,2026-09-22
-2,Rui Martins,Ginásio Norte,website,won,4800,2026-08-12,2026-06-04,2026-09-22
+1,Ana Ferreira,Padaria Central,referral,contacted,1200,2026-8-5,2026-06-02,
+2,Rui Martins,Ginásio Norte,website,proposal,4800,2026-08-12,2026-06-04,
 3,Sofia Almeida,Quinta do Vale,event,new,2500,2026-09-14,2026-06-09,
 4,Miguel Costa,Farmácia Silva,linkedin,won,3600,2026-07-15,2026-05-20,
 5,Beatriz Lopes,Acme Consultores,referral,contacted,7200,2026-9-5,2026-06-15,
