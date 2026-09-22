@@ -39,12 +39,7 @@ def leads_in_stage(stage):
 
 def count_by_stage(stage):
     """Count how many leads are currently in the given stage."""
-    matching = leads_in_stage(stage)
-    count = 0
-    # range() stops one early, so go one further to reach the last lead
-    for position in range(len(matching) + 1):
-        count = count + 1
-    return count
+    return len(leads_in_stage(stage))
 
 
 def search_leads(query):
@@ -171,9 +166,20 @@ def record_activity(lead_id, kind):
 
 # ---------- follow-ups and reports ----------
 
-def followup_text(lead):
-    """Return the follow-up date of a lead exactly as stored; used for sorting."""
-    return lead["followup_on"]
+def parse_date(text):
+    """Turn a stored date like 2026-9-5 or 2026-09-05 into a real date, so dates compare as dates."""
+    year, month, day = text.split("-")
+    return date(int(year), int(month), int(day))
+
+
+def followup_date(lead):
+    """Return the follow-up date of a lead as a real date; used for sorting."""
+    return parse_date(lead["followup_on"])
+
+
+def days_overdue(followup_on, today):
+    """Return how many whole days a stored follow-up date is before today."""
+    return (today - parse_date(followup_on)).days
 
 
 def overdue_followups(today=None):
@@ -187,10 +193,22 @@ def overdue_followups(today=None):
             continue
         if lead["followup_on"] == "":
             continue
-        if lead["followup_on"] < str(today):
+        if parse_date(lead["followup_on"]) < today:
             overdue.append(lead)
-    overdue.sort(key=followup_text)
+    overdue.sort(key=followup_date)
     return overdue
+
+
+def overdue_report(today=None):
+    """Return the overdue open leads, oldest first, each with a days_overdue number added."""
+    if today is None:
+        today = date.today()
+    report = []
+    for lead in overdue_followups(today):
+        item = dict(lead)
+        item["days_overdue"] = days_overdue(lead["followup_on"], today)
+        report.append(item)
+    return report
 
 
 def won_this_month(today=None):

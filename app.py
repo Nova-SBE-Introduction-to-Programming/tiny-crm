@@ -47,6 +47,14 @@ def show_pipeline():
     left.metric("Won this month", logic.won_this_month())
     right.metric("Overdue follow-ups", len(overdue_ids))
 
+    st.subheader("Overdue follow-ups")
+    report = logic.overdue_report()
+    if len(report) == 0:
+        st.caption("Nothing overdue.")
+    for item in report:
+        st.markdown("**" + item["name"] + "** · " + item["company"] + " · follow-up "
+                    + item["followup_on"] + " · " + str(item["days_overdue"]) + " days overdue")
+
     query = st.text_input("Search by name or company")
     leads = logic.search_leads(query)
 
